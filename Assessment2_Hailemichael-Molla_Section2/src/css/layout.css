@@ -1,0 +1,268 @@
+/* General Layout */
+body, html, .main, .clr { 
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+}
+
+.main { 
+    background-color: #fff; 
+}
+
+.clr { 
+    clear: both; 
+    width: 100%; 
+    font-size: 0px; 
+    line-height: 0px; 
+}
+
+/* Header Layout */
+.header {
+    background-color:#293526; 
+    height: 220px; 
+}
+
+.header_resize { 
+    margin: 0 auto; 
+    padding-left: 40px; 
+    width: 830px; 
+}
+
+.header .logo {
+     float: left; 
+    }
+
+/* Menu Layout */
+.menu_nav { 
+    float: left;
+     width: 1000px; 
+    }
+
+.menu_nav ul {
+     margin: 0; 
+      
+     list-style: none; 
+    }
+
+.menu_nav ul li { 
+    margin-right: 12px; 
+    float: left; 
+}
+
+.menu_nav ul li a { 
+    display: block; 
+    padding: 6px 12px; 
+    background: #f00 url(../images/menu.gif) repeat-x top; 
+}
+
+.menu_nav ul li a:hover, .menu_nav ul li.active a {
+     background: url(../images/menu_a.gif) repeat-x top; 
+    }
+
+/* Content Layout */
+.content { 
+    padding-bottom: 16px; 
+}
+
+.content_resize { 
+    border-top: none; 
+    margin: 0 auto; 
+    padding: 0 40px; 
+    width: 890px; 
+}
+
+.content .mainbar { 
+    float: left;
+     width: 630px; 
+    }
+
+.content .sidebar { 
+    float: right; 
+    width: 236px; 
+}
+
+.content .mainbar .article_vert { 
+    float: left; 
+    width: 297px; 
+    padding: 0 16px 0 0; 
+}
+
+/* Sidebar and Lists */
+ul.sb_menu, ul.ex_menu {
+     list-style: none; 
+     padding: 0; 
+    }
+
+ul.sb_menu li, ul.ex_menu li {
+     padding: 4px 0; 
+    }
+
+    .fbg {
+        background: #222922;
+      }
+      
+      .fbg_resize {
+        width: 100%;
+        margin: 0 200px;
+        display: flex;
+        flex:1;
+        flex-wrap: nowrap; /* Prevent wrapping */
+        justify-content: space-between; /* Align items side-by-side */
+        gap: 20px; /* Optional: space between About Us and Contact Us */
+      }
+      
+      .col {
+        margin-bottom: 20px;
+      }
+      
+      .c1, .c2, .c3 {
+        padding: 20px;
+        background: #222922;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      
+      /* Image Gallery (c1) */
+      .c1 {
+        flex: 1 1 45%; /* 45% width for Image Gallery */
+      }
+      
+      .grid-collage {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+        gap: 10px;
+      }
+      
+      .grid-collage a {
+        display: block;
+        width: 100%;
+      }
+      
+      .grid-collage img {
+        width: 50px; /* Reduced image size */
+        height: 50px; /* Reduced image size */
+        object-fit: cover; /* Ensure images fit inside the box */
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+      }
+      
+      .grid-collage img:hover {
+        transform: scale(1.05); /* Hover effect */
+      }
+      
+      /* About Us (c2) and Contact Us (c3) */
+      .c2, .c3 {
+        flex: 1 1 48%; /* 48% width for About Us and Contact Us to fit side by side */
+      }
+      
+ .c2 img {
+        width: 66px;
+        height: 66px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+      }
+
+
+/* Footer Layout */
+
+.footer {
+    background-color: #293526;/* Background color for the footer */
+    padding: 20px 0; /* Padding top and bottom */
+    text-align: center; /* Center-align text */
+  }
+  
+  .footer_resize {
+    width: 100%;
+    max-width: 1200px; /* Limit the width of the footer content */
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px; /* Padding on left and right */
+  }
+  
+  .fmenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center the menu horizontally */
+    gap: 30px; /* Space between the items */
+  }
+  
+  .fmenu li {
+    display: inline-block; /* Inline-block for list items */
+  }
+  
+  .fmenu li a {
+    padding: 5px 10px; /* Padding around the links */
+    transition: background 0.3s ease; /* Smooth background transition */
+  }
+  
+  .fmenu li a:hover {
+    background-color: #cce7ff; /* Light blue background on hover */
+    border-radius: 4px; /* Rounded corners on hover */
+  }
+  
+  .lf {
+    margin-top: 10px;
+  }
+   
+/* Form Layout */
+#sendemail {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  #sendemail ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #sendemail li {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #sendemail label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  #sendemail .text,
+  #sendemail textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  #sendemail .text:focus,
+  #sendemail textarea:focus {
+    border-color: #007bff; /* Highlight the input fields when focused */
+    outline: none;
+  }
+  
+  #sendemail textarea {
+    resize: vertical; /* Allow users to resize the textarea */
+    min-height: 150px;
+  }
+  
+  #sendemail .send {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #sendemail .send:hover {
+    opacity: 0.8;
+  }
+.btn{
+    margin-top: 20px;
+    width: 100px;
+    background-color: #293526;
+}
